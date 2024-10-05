@@ -24,12 +24,19 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets/images",
+             "src/assets/js"
+             
+
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+         "src/assets/js/action.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -82,12 +89,16 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              } ,
+              "src/assets/images",
+                "src/assets/js"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+          "src/assets/js/action.js"
+            ]
           }
         }
       }

@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+       <img src="../../../assets/images/woman-8656653_1280.webp">
+
+
+      </div>
+  
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+<section class="products-view container">
+<div class="row">
+<h1 class="text-center mt-5">Trending products</h1>
+@for (item of products; track $index) {
+
+<div class="col-md-3 mt-5" >
+  <div class="card" style="width:100%;height:100%;">
+    <img [src]=item.image class="card-img-top" style="width: 100%;height: 200px;">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text"><i class="fa-solid fa-indian-rupee-sign"></i> {{item.price}}</p>
+      <a href="#" class="btn btn-primary">Buy Now</a>
+      <a (click)="addcartitem(item.id)" class="btn btn-warning ms-4">Add to Cart</a>
+    </div>
+  </div>
+
+  
+</div>
+}
+</div>
+</section>
+
+
+
